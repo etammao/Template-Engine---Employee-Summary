@@ -23,7 +23,7 @@ async function main(){
         {name: 'count', type:'input', message:`How many people work under them?`},
     ])
 
-    team.push( new Manager(managerData.name, ID++,managerData.email,managerData.officeNumber))
+    team.push(new Manager(managerData.name, ID++,managerData.email,managerData.officeNumber))
     for (let userCnt=1; userCnt<=managerData.count;userCnt++){
 
         const user=await inquirer.prompt([
